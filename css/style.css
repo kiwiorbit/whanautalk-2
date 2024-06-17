@@ -393,7 +393,7 @@ li {
     background: linear-gradient(to top right, #a914ff80, #1e92fe94, #3dc4ed9c);
 
 
-    top: 55%;
+    top: 45%;
     left: 78%;
     filter: blur(20px);
     animation-name: gooey;
@@ -401,6 +401,7 @@ li {
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: ease-in-out;
+    z-index: 1;
 
 }
 
@@ -417,33 +418,35 @@ li {
 }
 
 #gooey2 {
-    height: 28vw;
-    width: 28vw;
+    height: 30vw;
+    width: 30vw;
     position: absolute;
     border-radius: 50%;
-    background: linear-gradient(to top right, #a914ff36, #1e92fe41, #3dc4ed44);
+    background: linear-gradient(to top right, #a914ff80, #1e92fe83, #929292);
 
 
-    top: 38%;
-    left: 58%;
-    filter: blur(20px);
+    top: 34%;
+    left: 15%;
+    filter: blur(30px);
     animation-name: gooey2;
-    animation-duration: 20s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: ease-in-out;
+    z-index: -1;
 
 }
 
 @keyframes gooey2 {
     from {
-        filter: blur(20px);
-        transform: translate(10%, -10%) skew(0);
+        filter: blur(30px);
+        transform: translate(5%, -14%) skew(0);
+        
     }
 
     to {
-        filter: blur(30px);
-        transform: translate(-170%, 40%) skew(-12deg);
+        filter: blur(60px);
+        transform: translate(10%, 20%) skew(-12deg);
     }
 }
 /* <!-- ====== 1.1. Header section ====== --> */
@@ -977,6 +980,8 @@ aside li a:hover {
 
 .center-btn {
     gap: 1.5rem;
+    position: relative;
+    z-index: 2;
 }
 
 .hero .tagline {
@@ -2583,14 +2588,6 @@ aside li a:hover {
     background: var(--gradient2);
 }
 
-.contact-us-form:hover {
-    background:linear-gradient(300deg,#2a1857,#62478f,#262624,#262624,#175968,#dda8a8);
-    background-size: 180% 180%;
-    animation: gradient-animation 10s ease infinite;
-}
-
-
-
 .contact-us-form .container {
     padding: 80px 15px;
 }
@@ -2611,6 +2608,7 @@ aside li a:hover {
     border: 1px solid rgb(109, 109, 109);
     box-shadow: 0 0 40px 10px rgba(30, 30, 30, 0.401);
     backdrop-filter:blur(100px);
+    position: relative;
 }
 
 .contact-form:hover {
