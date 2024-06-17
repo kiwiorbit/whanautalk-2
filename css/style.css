@@ -471,13 +471,13 @@ header {
     background-color:var(--bg-transparent);
     border-radius: 0.7rem;
     transition: var(--transition);
-    
-
-    &:hover {
-        box-shadow: 0 10px 90px -20px var(--dark-box-shadow);
-        backdrop-filter: blur(20px);
-    }
 }
+
+.navbar:hover {
+    box-shadow: 0 10px 90px -20px var(--dark-box-shadow);
+    backdrop-filter: blur(20px);
+}
+
 
 nav img {
     height: 45px;
@@ -622,7 +622,7 @@ nav li a.active,
 /* Sidebar */
 
 aside {
-    background:var(--dark);
+    background: var(--dark);
     z-index: 10;
 }
 
@@ -2117,13 +2117,15 @@ aside li a:hover {
     margin-top: 90px;
     display: flex;
     transition: all ease 400ms;
+    position: relative;
 }
 
 
 .collaboration-section:hover {
     padding: 200px 0;
     background:linear-gradient(300deg,#ffc4c4,#17798f, #192c5b, #3d2679, #541258 );
-    
+    background-size: 180% 180%;
+    animation: gradient-animation 5s ease infinite;
 }
 
 .collab-center {
@@ -2578,11 +2580,16 @@ aside li a:hover {
     color: #ffffff;
     font-family: var(--primary-font);
     z-index: 1;
-    background:linear-gradient(300deg,#ffc4c4,#17798f, #192c5b,#282828,#242426, #3d2679, #541258 );
+    background: var(--gradient2);
+}
+
+.contact-us-form:hover {
+    background:linear-gradient(300deg,#2a1857,#62478f,#262624,#262624,#175968,#dda8a8);
     background-size: 180% 180%;
     animation: gradient-animation 10s ease infinite;
-    
 }
+
+
 
 .contact-us-form .container {
     padding: 80px 15px;
@@ -2632,12 +2639,12 @@ aside li a:hover {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #ffffff;
-    border-radius: 5px;
+    border:none;
     background: transparent;
     color: #ffffff;
     font-family: var(--primary-font);
     letter-spacing: 1px;
+    box-shadow: 0 1px 0 0 white;
 }
 
 .contact-form input::placeholder,
@@ -2645,6 +2652,7 @@ aside li a:hover {
     color: #9aa0a6;
     font-family: var(--primary-font);
     letter-spacing: 1px;
+    border: none;
 }
 
 .contact-form input[type="checkbox"] {
@@ -2676,6 +2684,7 @@ aside li a:hover {
     color: white;
     transform: scale(0.95);
 }
+
 
 
 /* ====== 1.14. Footer section ====== */
@@ -2743,6 +2752,13 @@ footer {
 .footer-bottom-wrapper {
     display: flex;
     padding-bottom: 1rem;
+    justify-content: center;
+}
+
+
+.footer-credit-text {
+    font-size: 13px;
+    padding: 1.5rem;
 }
 
 
