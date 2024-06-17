@@ -65,6 +65,11 @@
         font-size: 20px;
     }
 
+    .navbar:hover {
+        box-shadow: none;
+        backdrop-filter: none;
+    }
+
 
 
     .feature .flex {
@@ -778,6 +783,18 @@
         padding: 40px 15px;
     }
 
+    #gooey {
+        height: 80vw;
+        width: 80vw;
+    }
+
+    #gooey2 {
+        height: 80vw;
+        width: 80vw;
+        top: 40%;
+        left: 0;
+    }
+
 }
 
 
@@ -872,7 +889,7 @@
 
     .hero h3 {
         padding: 10px 0px;
-        font-size: 13px;
+        font-size: 15px;
         line-height: 1.4;
     }
 
@@ -945,17 +962,7 @@
     }
 
 
-    #gooey {
-        height: 80vw;
-        width: 80vw;
-    }
-
-    #gooey2 {
-        height: 80vw;
-        width: 80vw;
-        top: 40%;
-        left: 0;
-    }
+    
 
     #backToTop {
         display: block;
