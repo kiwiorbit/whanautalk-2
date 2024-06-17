@@ -132,9 +132,9 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.querySelector('.contact-form').addEventListener('mouseover', function() {
-    document.querySelector('.contact-us-form').style.background = 'linear-gradient(300deg, #ffc4c4, #17798f, #192c5b, #282828, #242426, #3d2679, #541258)';
+    document.querySelector('.contact-us-form').style.background = 'linear-gradient(300deg, #62478f,#262624, #262624,#262624, #1a7083)';
     document.querySelector('.contact-us-form').style.backgroundSize = '180% 180%';
-    document.querySelector('.contact-us-form').style.animation = 'gradient-animation 8s ease infinite';
+    document.querySelector('.contact-us-form').style.animation = 'gradient-animation 10s ease infinite';
 });
 
 document.querySelector('.contact-form').addEventListener('mouseout', function() {
