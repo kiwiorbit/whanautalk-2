@@ -1,23 +1,3 @@
-// side bar start  
-// function openNav() {
-//     "use strict";
-//     const sidepanel = document.getElementById("mySidepanel");
-//     if (sidepanel) {
-//         sidepanel.style.left = "0";
-//     } else {
-//         console.error("Error: Side panel element not found!");
-//     }
-// }
-
-// function closeNav() {
-//     "use strict";
-//     const sidepanel = document.getElementById("mySidepanel");
-//     if (sidepanel) {
-//         sidepanel.style.left = "-320px";
-//     } else {
-//         console.error("Error: Side panel element not found!");
-//     }
-// }
 
 
 function toggleNav(open) {
@@ -38,19 +18,15 @@ function closeNav() {
     toggleNav(false);
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+    const anchorLinks = document.querySelectorAll("#mySidepanel a.nav-link.side");
+    anchorLinks.forEach(link => {
+        link.addEventListener("click", closeNav);
+    });
+});
 
 
-// function toggleCollapse(elementId) {
-//     var element = document.getElementById(elementId);
-//     var button = document.querySelector('.collapse_btn a');
 
-//     // Toggle the 'show' class
-//     element.classList.toggle('show');
-
-//     // Toggle aria-expanded attribute
-//     var isExpanded = button.getAttribute('aria-expanded') === 'true';
-//     button.setAttribute('aria-expanded', !isExpanded);
-// }
 
 function toggleCollapse(elementId) {
     "use strict";
@@ -69,77 +45,6 @@ function toggleCollapse(elementId) {
     }
 }
 
-
-// search-bar
-// function open_search_bar() {
-//     "use strict";
-//     const sidepanel = document.getElementById("search-bar");
-//     if (sidepanel) {
-//         sidepanel.style.height = "100vh";
-//         sidepanel.style.borderRadius = "0";
-//     } else {
-//         console.error("Error: Side panel element not found!");
-//     }
-// }
-
-// function close_search_bar() {
-//     "use strict";
-//     const sidepanel = document.getElementById("search-bar");
-//     if (sidepanel) {
-//         sidepanel.style.height = "0";
-//         sidepanel.style.borderTopLeftRadius = "100%";
-//         sidepanel.style.borderTopRightRadius = "100%";
-//     } else {
-//         console.error("Error: Side panel element not found!");
-//     }
-// }
-
-function toggleSearchBar(open) {
-    "use strict";
-    const sidepanel = document.getElementById("search-bar");
-    if (sidepanel) {
-        if (open) {
-            sidepanel.style.height = "100vh";
-            sidepanel.style.borderRadius = "0";
-        } else {
-            sidepanel.style.height = "0";
-            sidepanel.style.borderTopLeftRadius = "100%";
-            sidepanel.style.borderTopRightRadius = "100%";
-        }
-    } else {
-        console.error("Error: Side panel element not found!");
-    }
-}
-
-function openSearchBar() {
-    toggleSearchBar(true);
-}
-
-function closeSearchBar() {
-    toggleSearchBar(false);
-}
-
-
-// right-sidebar
-// function open_right_side() {
-//     "use strict";
-//     const sidepanel = document.getElementById("right_side");
-//     if (sidepanel) {
-//         sidepanel.style.right = "0";
-//     } else {
-//         console.error("Error: Side panel element not found!");
-//     }
-// }
-
-// function close_right_side() {
-//     "use strict";
-//     const sidepanel = document.getElementById("right_side");
-//     if (sidepanel) {
-//         sidepanel.style.right = "-355px";
-//     } else {
-//         console.error("Error: Side panel element not found!");
-//     }
-// }
 
 document.addEventListener("DOMContentLoaded", () => {
     const sidepanel = document.getElementById("mySidepanel");
@@ -190,97 +95,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("backToTop").style.display = "block";
-    } else {
-        document.getElementById("backToTop").style.display = "none";
-    }
-}
-
-function scrollToTop() {
-    const scrollToTopBtn = document.documentElement || document.body;
-    scrollToTopBtn.scrollIntoView({
-        behavior: "smooth"
-    });
-}
-
-
-// portfolio gallary tab
-function open_img(evt, cityName) {
-    var i, tabcontent, tablinks;
-
-    // Hide all tab content
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-
-    // Remove active class from all tab links
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].classList.remove("active");
-    }
-
-    // Show the selected tab content and mark the corresponding tab link as active
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.classList.add("active");
-}
-
-
-
-
-
-
-// button back to top 
-// window.onscroll = function () {
-//     scrollFunction()
-// };
-
-// function scrollFunction() {
-//     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-//         document.getElementById("backToTop").style.display = "block";
-//     } else {
-//         document.getElementById("backToTop").style.display = "none";
-//     }
-// }
-
-// function scrollToTop() {
-//     const scrollToTopBtn = document.documentElement || document.body;
-//     scrollToTopBtn.scrollIntoView({
-//         behavior: "smooth"
-//     });
-// }
-
-// Function to smoothly scroll to the top
-// function scrollToTop() {
-//     const scrollDuration = 1000; // Duration in milliseconds (1000ms = 1s)
-//     const scrollStep = -window.scrollY / (scrollDuration / 15);
-
-//     const scrollInterval = setInterval(() => {
-//         if (window.scrollY != 0) {
-//             window.scrollBy(0, scrollStep);
-//         } else {
-//             clearInterval(scrollInterval);
-//         }
-//     }, 15);
-// }
-
-// Show/hide the back-to-top button based on scroll position
-function toggleBackToTopButton() {
-    const backToTopButton = document.getElementById("backToTop");
-    const shouldShow = document.body.scrollTop > 20 || document.documentElement.scrollTop > 20;
-    backToTopButton.style.display = shouldShow ? "block" : "none";
-}
-
-// Set up the scroll event listener
-window.onscroll = function () {
-    toggleBackToTopButton();
-};
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
     "use strict";
     const accordionButtons = document.querySelectorAll('.accordion-button');
@@ -317,111 +131,58 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+document.querySelector('.contact-form').addEventListener('mouseover', function() {
+    document.querySelector('.contact-us-form').style.background = 'linear-gradient(300deg, #ffc4c4, #17798f, #192c5b, #282828, #242426, #3d2679, #541258)';
+    document.querySelector('.contact-us-form').style.backgroundSize = '180% 180%';
+    document.querySelector('.contact-us-form').style.animation = 'gradient-animation 8s ease infinite';
+});
+
+document.querySelector('.contact-form').addEventListener('mouseout', function() {
+    document.querySelector('.contact-us-form').style.background = 'var(--gradient2)';
+    document.querySelector('.contact-us-form').style.animation = 'none';
+});
+
 
 
 
 
 
 // footer validation start
-// const fom = document.getElementById('contact-form');
-// const footerMessage = document.getElementById('footer-message');
 
-// fom.addEventListener('submit', (event) => {
-//     event.preventDefault();
-//     footerMessage.innerHTML = '~ Submitted! Thank you';
-//     footerMessage.style.display = 'flex';
-//     fom.reset();
-//     setTimeout(() => {
-//         footerMessage.style.display = 'none';
-//     }, 3000);
-// });
-// footer validation end
-
-// Footer validation start
-document.addEventListener("DOMContentLoaded", function() {
-    "use strict";
+document.getElementById('contactFormElement').addEventListener('submit', function(event) {
+    // Get form elements
+    var name = document.getElementById('name').value.trim();
+    var email = document.getElementById('email').value.trim();
+    var message = document.getElementById('message').value.trim();
+    var dataConsent = document.getElementById('dataConsent').checked;
     
-    const form = document.getElementById('contact-form');
-    const footerMessage = document.getElementById('footer-message');
+    // Email regex pattern
+    var emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,6}$/i;
 
-    form.addEventListener('submit', (event) => {
+    // Validation checks
+    if (name === "") {
+        alert("Name is required.");
         event.preventDefault();
-        footerMessage.textContent = '~ Submitted! Thank you';
-        footerMessage.style.display = 'flex';
-        form.reset();
-        
-        setTimeout(() => {
-            footerMessage.style.display = 'none';
-        }, 3000);
-    });
+        return;
+    }
+
+    if (email === "" || !emailPattern.test(email)) {
+        alert("Please enter a valid email address.");
+        event.preventDefault();
+        return;
+    }
+
+    if (message === "") {
+        alert("Message is required.");
+        event.preventDefault();
+        return;
+    }
+
+    if (!dataConsent) {
+        alert("You must agree to the processing of personal data.");
+        event.preventDefault();
+        return;
+    }
+
+    // If all checks pass, the form will be submitted
 });
-// Footer validation end
-
-
-
-
-
-// // responsive Logoipsum Slider
-// $('.sliderlogo').slick({
-//     arrows: false,
-//     dots: false,
-//     infinite: false,
-//     autoplay: false,
-//     speed: 300,
-//     slidesToShow: 5,
-//     slidesToScroll: 1,
-//     responsive: [{
-//             breakpoint: 1024,
-//             settings: {
-//                 slidesToShow: 4,
-//                 slidesToScroll: 1,
-//                 infinite: true,
-//                 dots: false,
-//             }
-//         },
-//         {
-//             breakpoint: 600,
-//             settings: {
-//                 slidesToShow: 2,
-//                 slidesToScroll: 1
-//             }
-//         },
-//     ]
-// });
-
-
-// // responsive team Slider
-// $('.team-slider').slick({
-//     arrows: false,
-//     dots: true,
-//     infinite: false,
-//     autoplay: true,
-//     speed: 2000,
-//     slidesToShow: 4,
-//     slidesToScroll: 1,
-//     responsive: [{
-//             breakpoint: 1024,
-//             settings: {
-//                 slidesToShow: 3,
-//                 slidesToScroll: 1,
-//                 infinite: true,
-//                 dots: true,
-//             }
-//         },
-//         {
-//             breakpoint: 600,
-//             settings: {
-//                 slidesToShow: 2,
-//                 slidesToScroll: 1
-//             }
-//         },
-//         {
-//             breakpoint: 480,
-//             settings: {
-//                 slidesToShow: 1,
-//                 slidesToScroll: 1
-//             }
-//         }
-//     ]
-// });
-
