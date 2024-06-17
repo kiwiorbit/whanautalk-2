@@ -26,7 +26,6 @@
         <div class="header-index">
             <!-- ====== 1.1. Header section ====== -->
             <header>
-                <!-- Add an ID for the sidebar and ensure the navbar toggler calls the correct function -->
                 <nav class="container navbar">
                     <a class="navbar-logo" href="/"><img src="./images/contrastlogo.png" alt="logo"></a>
                     <div class="container-nav flex">
@@ -121,7 +120,6 @@
                         </p>
                     </div>
                     
-                    <hr>
                 </div>
                 <div class="flex flex-sb aim">
                     <div class="w-50 p-relative flex flex-center" data-aos="zoom-in">
@@ -153,7 +151,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="flex gap-1 ex-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="flex gap-1 ex-card" data-aos="fade-up" data-aos-delay="300">
                             <div class="flex flex-center">
                                 <h3>Q3</h3>
                             </div>
@@ -749,9 +747,9 @@
                 <div>
                 </div>
                 <div class="contact-form">
-                    <h1><span class="gradient-text-3" >Contact us</span></h1>
+                    <h1><span class="gradient-text-3">Contact us</span></h1>
                     <p>Please don't hesitate to contact us via this form if you want to participate in our <i>Family Support Programme</i>, have anything you would like to share, or want to get in touch for collaboration. We will reply as soon as possible and are looking forward to hearing from you.</p>
-                    <form action="https://formspree.io/f/mzbnngbk" method="post">
+                    <form id="contactFormElement" action="https://formspree.io/f/mzbnngbk" method="post">
                         <label for="name">NAME</label>
                         <input type="text" id="name" name="name" placeholder="e.g. Suzanne" required>
                         <label for="email">EMAIL</label>
@@ -759,35 +757,35 @@
                         <label for="message">MESSAGE</label>
                         <textarea id="message" name="message" rows="7" placeholder="Let us know" required></textarea>
                         <label class="checkbox-label">
-                            <input type="checkbox" name="agree"> I agree with the processing of personal data.
+                            <input type="checkbox" id="dataConsent" name="agree to share personal data"> I agree with the processing of personal data.
                         </label>
                         <button type="submit">SEND MESSAGE</button>
                     </form>
                 </div>
             </div>
-        </section> 
+        </section>
 
         <footer>
             <div class="container">
                 <div class="footer-top-wrapper">
                     <a href="#" class="footer-logo-link">
                         <div class="footer-logo">
-                            <img src="./images/contrastlogo.png" alt="">
+                            <img src="./images/small size logo blue ear-PhotoRoom 2.png" alt="">
                         </div>
                     </a>
                     <div class="footer-link-list">
                         <a href="#" class="footer_link">Home</a>
                         <a href="#researchProject" class="footer_link">Research</a>
                         <a href="#lenaSection" class="footer_link">Resources</a>
-                        <a href="#articles" class="footer_link">Publications</a>
                         <a href="#participateSection" class="footer_link">Participate</a>
+                        <a href="#articles" class="footer_link">Publications</a>
                         <a href="#collaborationSection" class="footer_link">Collaboration</a>
                         
                     </div>
                 </div>
                 <div class="line-divider"></div>
                 <div class="footer-bottom-wrapper">
-                    <div class="footer-credit-text">© <span class="text-year">2024</span> Whanau Talk</div>
+                    <div class="footer-credit-text">©<span class="text-year">2024</span> Whanau Talk</div>
                 </div>
             </div>
             
@@ -795,11 +793,10 @@
     </div>
     <!-- end site wrapper -->
 
-    <!-- button back to top -->
-<!--     <button onclick="scrollToTop()" id="backToTop"><i
-            class="fa-solid fa-arrow-turn-up"></i></button> -->
-
-  
+    <script>
+        
+    </script>
+    
     
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
