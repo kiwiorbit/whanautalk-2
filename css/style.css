@@ -473,11 +473,6 @@ header {
     transition: var(--transition);
 }
 
-.navbar:hover {
-    box-shadow: 0 10px 90px -20px var(--dark-box-shadow);
-    backdrop-filter: blur(20px);
-}
-
 
 nav img {
     height: 45px;
