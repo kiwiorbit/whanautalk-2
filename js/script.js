@@ -4,7 +4,7 @@ function toggleNav(open) {
     "use strict";
     const sidepanel = document.getElementById("mySidepanel");
     if (sidepanel) {
-        sidepanel.style.left = open ? "0" : "-320px";
+        sidepanel.style.left = open ? "0" : "-100%";
     } else {
         console.error("Error: Side panel element not found!");
     }
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Function to toggle sidebar
     function toggleSidebar() {
         if (sidepanel.style.left === "0px") {
-            sidepanel.style.left = "-320px";
+            sidepanel.style.left = "-100%";
         } else {
             sidepanel.style.left = "0";
         }
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function handleSwipeGesture() {
         if (touchEndX < touchStartX - 50) {
             // Swipe left to close the sidebar
-            sidepanel.style.left = "-320px";
+            sidepanel.style.left = "-100%";
         } else if (touchEndX > touchStartX + 50) {
             // Swipe right to open the sidebar
             sidepanel.style.left = "0";
