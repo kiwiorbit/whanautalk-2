@@ -3,10 +3,6 @@
         max-width: 1140px;
     }
 
-    .logoipsum-slider figure {
-        padding: 30px 18px;
-    }
-
     .team-member {
         /* min-width: 277px; */
     }
@@ -15,14 +11,6 @@
 @media screen and (max-width: 1140px) {
     .container {
         max-width: 960px;
-    }
-
-
-    .coming-soon p {
-        padding: 0 50px;
-    }
-    .coming-soon img {
-        width: 80%;
     }
 }
 
@@ -42,8 +30,7 @@
         display: block !important;
     }
 
-    .navbar-nav,
-    .nav-right {
+    .navbar-nav {
         display: none !important;
     }
 
@@ -68,33 +55,6 @@
     .navbar:hover {
         box-shadow: none;
         backdrop-filter: none;
-    }
-
-
-
-    .feature .flex {
-        flex-wrap: wrap;
-    }
-
-    .feature .grid {
-        display: block;
-    }
-    
-    .header-card {
-        width: 100%;
-        margin: 0;
-        padding: 10px 0 ;
-    }
-
-
-    .header-card:nth-child(3),
-    .header-card:nth-child(4) {
-        margin: 0;
-    }
-
-    .feature h4 {
-        width: 100%;
-        margin: 19px 0 15px 0;
     }
 
     .logos-title-large .container-5 .logo-wrapper {
@@ -153,12 +113,6 @@
         line-height: 20px;
     }
 
-    h6 {
-        font-size: 12px;
-        font-weight: 500;
-        line-height: 18px;
-    }
-
     p {
         font-size: 16px;
         font-weight: 400;
@@ -182,24 +136,8 @@
         font-size: 35px;
     }
 
-    
-
-    .h2_margin {
-        margin: 13px 0;
-    }
-
     .container {
         max-width: 757px;
-    }
-
-    .hero-social-icon {
-        position: relative;
-        flex-direction: row !important;
-        justify-content: center !important;
-    }
-
-    .hero-social-icon hr {
-        display: none;
     }
     .team-member {
         /* min-width: 232px; */
@@ -216,17 +154,6 @@
     }
 
 
-
-    .article-section-heading h2 {
-        font-size: 32px;
-    }
-
-
-    .ab-feature {
-        padding: 10px 0 60px 0;
-    }
-
-
     
     
     .logo-wrapper {
@@ -239,29 +166,6 @@
         margin-bottom: 30px;
         margin-left: 20px;
         margin-right: 20px;
-    }
-
-
-    .logoipsum {
-        padding: 100px 0;
-    }
-
-    .logoipsum .hr1 {
-        width: 80px;
-        margin: 0 auto 33px auto;
-    }
-
-    .logoipsum .hr2 {
-        width: 80px;
-        margin: 33px auto 0 auto;
-    }
-
-    .logoipsum-slider {
-        margin-top: 12px;
-    }
-
-    .logoipsum img {
-        width: 150px;
     }
 
     .about {
@@ -287,66 +191,6 @@
 
     .about .center-btn {
         justify-content: center;
-    }
-
-    .portfolio-1 {
-        padding: 70px 0 70px 0;
-    }
-
-    .gallary {
-        padding-bottom: 70px;
-    }
-
-    .tab button {
-        padding: 11px 19px;
-    }
-
-    .gallary img {
-        height: 300px;
-    }
-
-    .gallary img[alt="sm_img"] {
-        height: 150px;
-    }
-
-    .gallary .container {
-        margin-top: -355px;
-    }
-
-    .gallary .mt {
-        margin-top: -258px;
-    }
-
-    .service-1 {
-        padding: 70px 0;
-    }
-
-    .service-1 .flex-column {
-        flex-wrap: wrap;
-    }
-
-    .service-card {
-        width: 48%;
-    }
-
-    .service-1 .s-card {
-        flex-wrap: wrap;
-    }
-
-    .service-card img[alt="slider1"] {
-        width: 85px;
-    }
-
-    .service-card img[alt="slider2"] {
-        width: 62px;
-    }
-
-    .service-card img[alt="slider3"] {
-        width: 52px;
-    }
-
-    .experience {
-        padding: 70px 0;
     }
 
 
@@ -384,45 +228,15 @@
         min-height: 170px;
     }
 
-    .testimonial {
-        padding: 120px 0 70px 0;
-    }
-
     .team {
         padding: 70px 0 0 0;
-    }
-
-    #team {
-        padding: 70px 0 70px 0;
-    }
-
-
-    .overlay_text i {
-        font-size: 18px;
     }
 
     .collaboration-section {
         margin-top: 70px;
     }
 
-
-    .pricing {
-        padding: 70px 0;
-    }
-
-    #pricing {
-        padding: 70px 0;
-    }
-
-    .pricing-hr {
-        display: none !important;
-    }
-
     .faq {
-        padding: 70px 0;
-    }
-
-    #faq {
         padding: 70px 0;
     }
 
@@ -434,26 +248,7 @@
         padding: 0 10px 0 0;
     }
 
-    .blog {
-        padding: 70px 0;
-    }
-
-    .footer-hr p {
-        padding: 0 30px;
-    }
-
-    .service-page {
-        padding: 70px 0 50px 0;
-    }
-
     /* ====== contact.html ====== */
-    .contact form {
-        padding: 40px 45px;
-    }
-
-    .contact-address hr {
-        display: none;
-    }
 
     .flex-sb {
         flex-wrap: wrap;
@@ -465,24 +260,6 @@
 
     .about-imgs {
         margin-top: 50px;
-    }
-
-    #contact-form {
-        overflow: hidden;
-        width: 100%;
-        justify-content: center;
-    }
-
-    #contact-form input {
-        width: 100%;
-        padding: 30px;
-    }
-
-    #contact-form button {
-        width: 100%;
-    }
-    .blog p{
-        padding: 0;
     }
 
     .lena-device,
@@ -541,85 +318,6 @@
         flex-direction: column; */
     }
 
-
-    .feature .grid {
-        display: block;
-    }
-    
-    .header-card {
-        width: 100%;
-        margin: 0;
-        padding: 10px 0 ;
-    }
-
-    .gallary .w-33,
-    .gallary .w-66 {
-        width: 100%;
-    }
-
-    .portfo-center {
-        width: 100% !important;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .portfo-center .gap-1,
-    .service-data .gap-1,
-    .exp-center .gap-1,
-    .blog-center .gap-1,
-    .team-center .gap-1 {
-        justify-content: center !important;
-        flex-wrap: wrap !important;
-    }
-
-    .research .exp-center .gap-1 {
-        margin-bottom: 2rem;
-    }
-
-    .portfo-center .w-50,
-    .portfo-center .w-100,
-    .service-data .w-66,
-    .service-data .w-33,
-    .exp-center .w-66,
-    .exp-center .w-33,
-    .blog-center .w-33,
-    .blog-center .w-66,
-    .team-center .w-66,
-    .team-center .w-33{
-        width: 100% !important;
-        max-width: 100% !important;
-        text-align: center !important;
-        justify-content: center !important;
-    }
-    .team-center{
-        flex-wrap: wrap;
-    }
-    .blog-center {
-        flex-wrap: wrap;
-    }
-
-    .blog-cards {
-        flex-wrap: wrap;
-    }
-
-    .blog-card {
-        flex: none !important;
-        width: 100%;
-    }
-
-    .portfo-center .w-100 {
-        margin-top: 1rem;
-    }
-
-    .portfolio-1 p {
-        padding: 0;
-    }
-
-    .service-card {
-        width: 100%;
-    }
-
     .work-para {
         padding: 0 10px;
     }
@@ -665,59 +363,6 @@
     .work-line div {
         width: 170px !important;
         min-height: 170px !important;
-    }
-
-    .pricing-card {
-        flex-wrap: wrap;
-    }
-
-    .pricing p {
-        padding: 0 10px;
-    }
-
-    .pricing-card div:nth-child(2) {
-        transform: scale(1);
-    }
-
-    .pricing-card {
-        align-items: center;
-    }
-
-    .blog p {
-        padding: 0;
-    }
-
-    .footer-menu .flex-start {
-        flex-wrap: wrap;
-        align-items: center !important;
-        justify-content: center !important;
-    }
-    .footer-center .w-33,
-    .footer-center .w-16,
-    .footer-center .w-16,
-    .footer-center .w-33 {
-        width: 100% !important;
-        max-width: 100% !important;
-       
-    }
-    .footer-menu p{
-        text-align: center;
-        padding: 0;
-    }
-    .footer-menu a{
-        text-align: center;
-    }
-    .footer-menu h4{
-        text-align: center;
-    }
-
-
-    #search-bar form{
-        width: 90%;
-    }
-
-    .notification {
-        margin-bottom:1rem;
     }
 
     .team-grid {
@@ -789,8 +434,8 @@
     }
 
     #gooey2 {
-        height: 80vw;
-        width: 80vw;
+        height: 75vw;
+        width: 75vw;
         top: 40%;
         left: 0;
     }
@@ -829,12 +474,6 @@
 
     h5 {
         /* font-size: 16px; */
-        font-weight: 500;
-        line-height: 20px;
-    }
-
-    h6 {
-        font-size: 16px;
         font-weight: 500;
         line-height: 20px;
     }
@@ -960,13 +599,6 @@
     .research-question h2 {
         text-align: center;
     }
-
-
-    
-
-    #backToTop {
-        display: block;
-    }
     
 
     .lena-tech {
@@ -1004,9 +636,9 @@
         font-size: 14px;
     }
 
-    /* .footer-link-list {
+    .footer-link-list {
         flex-direction: column;
-    } */
+    }
 
     .about-data .fa-chevron-left {
         display: none;
@@ -1024,7 +656,5 @@
     .about p {
         text-align: start;
     }
-
-
 
 }
